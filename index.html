@@ -1563,6 +1563,39 @@
       margin-bottom: 28px;
     }
     .case-desc strong { color: var(--ink); font-weight: 600; }
+    /* Feature list inside case studies */
+    .case-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .case-features li {
+      position: relative;
+      padding-left: 28px;
+      font-size: .92rem;
+      line-height: 1.65;
+      color: var(--ink-mid);
+    }
+    .case-features li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+      box-shadow: 0 0 0 3px var(--brand-muted);
+    }
+    .case-features li strong {
+      color: var(--ink);
+      font-weight: 600;
+      display: inline;
+    }
+
 
     /* Carousel */
     .case-carousel {
@@ -3594,12 +3627,13 @@
 
           <div class="case-study">
             <div class="case-meta">
-              <div class="case-meta-item"><span class="case-meta-label">Entreprise</span><span class="case-meta-value">Réseau AUXI'life</span></div>
-              <div class="case-meta-item"><span class="case-meta-label">Outils & Technologies</span><span class="case-meta-value">Google Business Profile · Claude Code API · GitHub</span></div>
+              <div class="case-meta-item"><span class="case-meta-label">Entreprise</span><span class="case-meta-value">Réseau AUXI'life (65 agences)</span></div>
+              <div class="case-meta-item"><span class="case-meta-label">Outils & Technologies</span><span class="case-meta-value">Google Business Profile · API Claude Code · GitHub</span></div>
+              <div class="case-meta-item"><span class="case-meta-label">Périmètre</span><span class="case-meta-value">Presence & Feedback Management · IA · SEO Local</span></div>
             </div>
-            <h3 class="case-title">65 fiches Google Business Profile & Présence Management</h3>
-            <p class="case-desc">Pour le compte des 65 agences du Réseau AUXI'life, j'ai piloté l'<strong>optimisation complète des fiches Google Business Profile</strong> et modernisé le pilotage du réseau grâce à l'IA :</p>
-            <ul style="margin: 12px 0 16px 20px; color: var(--ink-mid); font-size: 0.95rem; line-height: 1.6;">
+            <h3 class="case-title">Pilotage de 65 fiches Google, Dashboard Présence Management & IA Feedback</h3>
+            <p class="case-desc">Pour piloter efficacement la réputation et la visibilité des 65 agences du Réseau AUXI'life, j'ai conçu et mis en place une solution sur-mesure alliant SEO local, automatisation et intelligence artificielle :</p>
+            <ul class="case-features">
               <li><strong>Tableau de bord dynamique & Présence Management :</strong> conception et déploiement d'un dashboard connecté via l'API Claude Code et GitHub pour monitorer la visibilité locale et harmoniser les informations des 65 agences.</li>
               <li><strong>Assistant IA pour le Feedback Management :</strong> automatisation du traitement des avis avec un assistant IA intelligent capable de générer des réponses personnalisées, bienveillantes et adaptées au secteur médico-social.</li>
               <li><strong>Analyses croisées dynamiques & sémantiques :</strong> possibilité de filtrer par date et par agence, couplée à une analyse sémantique approfondie des retours clients pour identifier les signaux faibles et axes d'amélioration.</li>
